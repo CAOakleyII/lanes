@@ -125,7 +125,7 @@ all: $(MODULE)/core.$(_SO)
 #
 $(MODULE_DIR)/core.$(_SO): $(OBJ)
 	mkdir -p $(MODULE_DIR)
-	$(CC) $(LIBFLAG) $^ $(LIBS) $(LUA_LIBS) -o $@
+	$(CC) -fPIC $(LIBFLAG) $^ $(LIBS) $(LUA_LIBS) -o $@
 
 clean:
 	-rm -rf $(MODULE)/core.$(_SO) *.o *.map
