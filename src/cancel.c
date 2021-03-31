@@ -34,7 +34,7 @@ THE SOFTWARE.
 */
 
 #include <assert.h>
-
+#include <string.h>
 #include "threading.h"
 #include "cancel.h"
 #include "tools.h"
